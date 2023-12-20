@@ -2,7 +2,13 @@ export default function Navbar() {
   return (
     <div className="w-full p-4 flex justify-between items-center">
       <div>
-        <img src="/img/logo.png" className="w-40" alt="" />
+        <a href="index.html">
+          <img
+            src="/img/logo.png"
+            className="w-40"
+            alt="logomarca do Supermercado Shoprite"
+          />
+        </a>
       </div>
 
       <div className="px-2">
@@ -44,7 +50,7 @@ export default function Navbar() {
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                  d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
                 />
               </svg>
             </button>

@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <section className="banner max-w-5xl w-full p-3">
+    <section className="banner max-w-5xl w-full p-5">
       <div className="text-center">
         <h1 className="paisagem-tablet:text-7xl retrato-tablet:text-5xl text-4xl font-bold text-white">
           Encontre Aqui Preços{" "}
@@ -15,7 +15,7 @@ export default function Banner() {
         <div className="flex flex-row justify-center gap-4 mt-5 items-center">
           <a
             href="#"
-            className="retrato-tablet:w-48 w-full bg-red-600  ring-red-500 ring-4 ring-opacity-60 py-3 text-white font-medium rounded"
+            className="retrato-tablet:w-48 w-full transition-all hover:bg-red-700 bg-red-600  ring-red-500 ring-4 ring-opacity-60 py-3 text-white font-medium rounded"
           >
             Encontre Lojas
           </a>
