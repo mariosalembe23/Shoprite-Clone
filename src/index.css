@@ -52,7 +52,7 @@ p {
   background-size: cover;
   transition: transform 1s ease-in-out;
 }
-.card__image:nth-child(1) {
+/* .card__image:nth-child(1) {
   background-image: url("/img/cos1.jpg");
 }
 .card__image:nth-child(2) {
@@ -63,7 +63,7 @@ p {
 }
 .card__image:nth-child(4) {
   background-image: url("/img/cos4.jpg");
-}
+} */
 .animationDown {
   animation: cardDownAnimation 0.6s 0.4s ease-in-out forwards;
 }

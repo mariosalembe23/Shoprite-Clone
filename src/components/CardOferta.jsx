@@ -7,7 +7,7 @@ export default function CardOferta({ categoria, descricao, image }) {
           <small className="text-white">{descricao}</small>
         </header>
         <footer>
-          <button className="w-full cursor-pointer rounded bg-white ring-4 ring-slate-300 ring-opacity-40 text-black font-medium py-2.5">
+          <button className="w-full transition-all cursor-pointer rounded bg-white ring-4 ring-slate-300 ring-opacity-40 hover:ring-opacity-70 text-black font-medium py-2.5">
             {" "}
             Todas Ofertas
           </button>

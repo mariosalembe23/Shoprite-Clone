@@ -24,7 +24,7 @@ export default function CardTalho({ image, hours }) {
         </header>
 
         <footer className="text-end">
-          <button className="bg-transparent transition-all hover:bg-red-600 hover:ring-0 ring-4 ring-white px-5 p-1.5 ring-opacity-30 text-white rounded font-medium text-[14px]">
+          <button className="bg-transparent transition-all hover:bg-white  ring-4 ring-white px-5 p-1.5 ring-opacity-30 text-white hover:text-black rounded font-medium text-[14px]">
             Provar
           </button>
         </footer>

@@ -1,6 +1,7 @@
 import CardOferta from "./CardOferta";
 import React, { useEffect, useRef } from "react";
 import CardTalho from "./CardTalho";
+import CardQuiosque from "./CardQuiosque";
 
 export default function Main() {
   const elementRef = useRef(null);
@@ -54,7 +55,7 @@ export default function Main() {
     <main className=" m-auto w-full">
       <section className="w-full mt-20" id="ofertas">
         <header className="text-center p-5">
-          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-slate-900 font-semibold">
+          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             As Melhores Ofertas
           </h2>
           <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
@@ -92,7 +93,7 @@ export default function Main() {
 
       <section className="p-5" id="bebe">
         <header className="text-center">
-          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-slate-900 font-semibold">
+          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             Cuide da Saúde de seu Bebê!
           </h2>
           <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
@@ -171,7 +172,7 @@ export default function Main() {
         <div className="grid items-center gap-5 grid-cols-1 retrato-tablet:grid-cols-2 max-w-6xl w-full m-auto">
           <div className="p-3">
             <header>
-              <h3 className="text-3xl font-semibold retrato-tablet:text-start text-center text-slate-900">
+              <h3 className="text-3xl font-semibold retrato-tablet:text-start text-center text-black">
                 Cuide de seu Corpo, Pele e Cabelo!
               </h3>
               <p className="mt-4 text-slate-800">
@@ -269,10 +270,10 @@ export default function Main() {
           </div>
           <div className="py-8 paisagem-tablet:px-3 px-0">
             <div className="grid retrato-tablet:grid-cols-4 grid-cols-1 gap-1">
-              <div className="p-5  h-80 shadow-lg cardDown  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardUp  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardDown  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardUp  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardDown bg-[url('/img/cos1.jpg')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos2.jpg')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardDown  bg-[url('/img/cos3.jpg')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos4.jpg')]  ring-2 ring-slate-200  card__image"></div>
             </div>
           </div>
         </div>
@@ -280,7 +281,7 @@ export default function Main() {
 
       <section className="mt-28">
         <header className="text-center mb-8">
-          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-slate-900 font-semibold">
+          <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             Talho
           </h2>
           <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
@@ -305,6 +306,63 @@ export default function Main() {
             hours={9}
           />
         </div>
+
+        <div className="mt-10 max-w-4xl  text-center w-full p-4 m-auto">
+          <p className="text-center text-slate-800">
+            Descubra uma deliciosa variedade de receitas de pratos em nosso
+            site! De pratos principais a sobremesas irresistíveis, temos uma
+            seleção diversificada que atende a todos os paladares.
+          </p>
+          <button className="mt-5 transition-all ring-zinc-400 hover:ring-4 px-8 py-2.5 rounded bg-black text-white font-medium">
+            Todas Receitas
+          </button>
+        </div>
+      </section>
+
+      <section className="mt-20 p-5">
+        <header className="text-center">
+          <h2 className="paisagem-tablet:text-4xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
+            Serviços de Quiosque
+          </h2>
+          <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
+          <p className="max-w-4xl text-slate-800 w-full m-auto py-5">
+            Num esforço para lhe darmos o melhor da conveniência num só local,
+            os serviços do quiosque dentro da loja da Shoprite permitem-lhe
+            tratar de todos os seus assuntos monetários na sua loja local.
+          </p>
+        </header>
+
+        <article className="grid pb-10 mt-7 m-auto grid-cols-1 retrato-tablet:grid-cols-2 max-w-5xl w-full items-center gap-4">
+          <CardQuiosque
+            icon={"/img/creditCard.svg"}
+            title={"Cartão de Negócios"}
+            introText={
+              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+            }
+          />
+            <CardQuiosque
+            icon={"/img/pay.svg"}
+            title={"Pagamento de Contas"}
+            introText={
+              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+            }
+          />
+            <CardQuiosque
+            icon={"/img/antena.svg"}
+            title={"Tempo de Antena"}
+            introText={
+              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+            }
+          />
+            <CardQuiosque
+            icon={"/img/oferta.svg"}
+            title={"Cartões-Pressente"}
+            introText={
+              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+            }
+          />
+         
+        </article>
       </section>
     </main>
   );
