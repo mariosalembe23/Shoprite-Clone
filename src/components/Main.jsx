@@ -4,7 +4,7 @@ import CardTalho from "./CardTalho";
 import CardQuiosque from "./CardQuiosque";
 
 export default function Main() {
-  const elementRef = useRef(null);
+  const cardPele = useRef(null);
 
   useEffect(() => {
     const options = {
@@ -41,13 +41,13 @@ export default function Main() {
 
     const observer = new IntersectionObserver(callback, options);
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    if (cardPele.current) {
+      observer.observe(cardPele.current);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (cardPele.current) {
+        observer.unobserve(cardPele.current);
       }
     };
   }, []);
@@ -139,7 +139,7 @@ export default function Main() {
                 educativos e roupas adoráveis!
               </p>
               <footer className="text-center mt-5 px-4">
-                <button className="text-[14px] w-full transition-all  ring-4 ring-opacity-30 ring-zinc-100  px-3 py-2 bg-white text-red-600 font-medium rounded">
+                <button className="text-[14px] w-full   ring-4 ring-opacity-30 ring-zinc-100 transition-all hover:ring-[.4rem]  px-3 py-2 bg-white text-red-600 font-medium rounded">
                   Ver Tudo
                 </button>
               </footer>
@@ -168,7 +168,7 @@ export default function Main() {
         </article>
       </section>
 
-      <section className="p-5 mt-12 care" ref={elementRef}>
+      <section className="p-5 mt-12 care" ref={cardPele}>
         <div className="grid items-center gap-5 grid-cols-1 retrato-tablet:grid-cols-2 max-w-6xl w-full m-auto">
           <div className="p-3">
             <header>
@@ -282,7 +282,7 @@ export default function Main() {
       <section className="mt-28">
         <header className="text-center mb-8">
           <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
-            Talho
+            Das Melhores Carnes
           </h2>
           <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
         </header>
@@ -344,21 +344,21 @@ export default function Main() {
             icon={"/img/pay.svg"}
             title={"Pagamento de Contas"}
             introText={
-              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+              "Além de poupar dinheiro com os nossos preços baixos, gostamos de lhe fazer poupar algum tempo e esforço. Graças aos serviços e ao quiosque dentro da loja da Shoprite, pode fazer os seus pagamentos mensais da conta DStv."
             }
           />
             <CardQuiosque
             icon={"/img/antena.svg"}
             title={"Tempo de Antena"}
             introText={
-              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+              "Um telefonema pode fazer toda a diferença quando quer saber dos amigos e da família. Não só pode carregar tempo de antena na sua Shoprite mais próxima, como também temos algumas vantagens únicas para quando o fizer."
             }
           />
             <CardQuiosque
             icon={"/img/oferta.svg"}
-            title={"Cartões-Pressente"}
+            title={"Cartões-Presente"}
             introText={
-              " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
+              "Os nossos cartões-presente são uma forma simples, mas muito apreciada, de mostrar que é uma pessoa preocupada, quer seja para recompensar os seus colaboradores por tudo o que fazem, como para dar algo especial aos seus entes queridos."
             }
           />
          

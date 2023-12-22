@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import Main from "./components/Main";
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <HomePage />
       <Main />
+      <Footer/>
     </>
   );
 }
