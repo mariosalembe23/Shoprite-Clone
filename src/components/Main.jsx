@@ -175,7 +175,7 @@ export default function Main() {
               <h3 className="text-3xl font-semibold retrato-tablet:text-start text-center text-black">
                 Cuide de seu Corpo, Pele e Cabelo!
               </h3>
-              <p className="mt-4 text-slate-800">
+              <p className="mt-4 retrato-tablet:text-start tetx-center text-slate-800">
                 Desperte a beleza natural que existe em você com nossa exclusiva
                 gama de produtos e dicas dedicadas a aprimorar a saúde da sua
                 pele e cabelo! Na busca pela radiância e confiança, oferecemos
@@ -339,29 +339,32 @@ export default function Main() {
             introText={
               " Quer precise de material de escritório, produtos básicos de mercearia, lanches e bebidas, ou equipamento de cozinha e produtos de limpeza – pode obter todos os artigos para o seu escritório num só local nas nossas lojas a nível nacional."
             }
+            alternativeText={"icone de cartão de crédito"}
           />
-            <CardQuiosque
+          <CardQuiosque
             icon={"/img/pay.svg"}
             title={"Pagamento de Contas"}
             introText={
               "Além de poupar dinheiro com os nossos preços baixos, gostamos de lhe fazer poupar algum tempo e esforço. Graças aos serviços e ao quiosque dentro da loja da Shoprite, pode fazer os seus pagamentos mensais da conta DStv."
             }
+            alternativeText={"icone de Pagamento"}
           />
-            <CardQuiosque
+          <CardQuiosque
             icon={"/img/antena.svg"}
             title={"Tempo de Antena"}
             introText={
               "Um telefonema pode fazer toda a diferença quando quer saber dos amigos e da família. Não só pode carregar tempo de antena na sua Shoprite mais próxima, como também temos algumas vantagens únicas para quando o fizer."
             }
+            alternativeText={"icone de Compatilhamento"}
           />
-            <CardQuiosque
+          <CardQuiosque
             icon={"/img/oferta.svg"}
             title={"Cartões-Presente"}
             introText={
               "Os nossos cartões-presente são uma forma simples, mas muito apreciada, de mostrar que é uma pessoa preocupada, quer seja para recompensar os seus colaboradores por tudo o que fazem, como para dar algo especial aos seus entes queridos."
             }
+            alternativeText={"icone de Presentes"}
           />
-         
         </article>
       </section>
     </main>
