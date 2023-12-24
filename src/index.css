@@ -16,7 +16,7 @@ body {
   background-color: var(--bgPage);
 }
 .homePage {
-  background-image: url("/img/back.jpg");
+  background-image: url("/img/back.webp");
   background-size: cover;
   background-position: center center;
 }
@@ -73,7 +73,8 @@ textarea {
   font-size: 1.2rem;
 }
 .backMask,
-.backMaskForm {
+.backMaskForm,
+.backOffCanvas {
   background-color: transparent;
 }
 .text_wating,
@@ -86,7 +87,7 @@ textarea {
   transform: translateY(-200%);
 }
 .cardSearch_visible {
-  animation: cardSearchAnimation .7s 0.5s ease-in-out forwards;
+  animation: cardSearchAnimation 0.7s 0.5s ease-in-out forwards;
 }
 .cardSearch_unvisible {
   animation: cardSearchAnimationOff 0.5s ease-in-out forwards;
@@ -106,6 +107,31 @@ textarea {
 }
 .form_contact_hide {
   animation: showFormContactClosed 0.5s ease-in-out forwards;
+}
+.offcanvas {
+  transform: translateX(150%);
+  transition: transform 0.7s ease-in-out;
+}
+.offcanvas_show {
+  animation: showOffCanvas 0.3s 0.8s ease-in-out forwards;
+}
+.offcanvas_hide{
+  animation: HideOffCanvas 0.8s ease-in-out forwards;
+}
+@keyframes showOffCanvas {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}@keyframes HideOffCanvas {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(150%);
+  }
 }
 @keyframes showFormContact {
   from {

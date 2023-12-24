@@ -1,14 +1,49 @@
 export default function Navbar() {
+  const scrollPage = () => {
+    const navbar = document.querySelector(".navbar");
+
+    if (!navbar) {
+      return;
+    }
+
+    if (window.scrollY === 0) {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("shadow-md");
+      navbar.classList.remove("bg-red-600");
+    } else {
+      navbar.classList.remove("bg-transparent");
+      navbar.classList.add("shadow-md");
+      navbar.classList.add("bg-red-600");
+    }
+  };
+
+  scrollPage();
+
+  function showOffCanvas() {
+    const offcanvas = document.querySelector(".offcanvas");
+    const backOffCanvas = document.querySelector(".backOffCanvas");
+    backOffCanvas.classList.remove("hidden");
+    backOffCanvas.classList.remove("backMask_off");
+    backOffCanvas.classList.add("backMask_on");
+    offcanvas.classList.remove("offcanvas_hide");
+    offcanvas.classList.add("offcanvas_show");
+    document.body.style.overflow = "hidden";
+  }
+
+  document.addEventListener("scroll", scrollPage);
+
   function showFormContact() {
     const formContact = document.querySelector(".form_contact");
+    const nameInput = document.getElementById("name");
     const backMaskForm = document.querySelector(".backMaskForm");
     backMaskForm.classList.remove("hidden");
     backMaskForm.classList.remove("backMask_off");
     backMaskForm.classList.add("backMask_on");
-    formContact.classList.remove("hidden")
-    formContact.classList.remove("form_contact_hide")
-    formContact.classList.add("form_contact_show")
+    formContact.classList.remove("hidden");
+    formContact.classList.remove("form_contact_hide");
+    formContact.classList.add("form_contact_show");
     document.body.style.overflow = "hidden";
+    nameInput.focus();
   }
 
   function openSearchBox() {
@@ -25,8 +60,9 @@ export default function Navbar() {
     document.body.style.overflow = "hidden";
     searchInput.focus();
   }
+
   return (
-    <div className="w-full p-4 flex justify-between items-center">
+    <div className="w-full navbar fixed top-0 left-0 right-0 px-4 py-3 z-10 transition-all flex justify-between items-center">
       <div>
         <a href="index.html">
           <img
@@ -85,6 +121,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
+              onClick={showOffCanvas}
               title="Menu"
               className="text-white transition-all hover:text-opacity-60 flex items-center justify-center"
             >

@@ -1,6 +1,7 @@
 export default function FormDialog() {
   function closeFormContact() {
     const formContact = document.querySelector(".form_contact");
+    
     const backMaskForm = document.querySelector(".backMaskForm");
     formContact.classList.remove("form_contact_show");
     formContact.classList.add("form_contact_hide");

@@ -71,22 +71,22 @@ export default function Main() {
           <CardOferta
             categoria={"Mobílias e Acessórios"}
             descricao={" Equipamentos e Aparelhos para sua Casa!"}
-            image={'bg-[url("/img/mobilia.jpg")]'}
+            image={'bg-[url("/img/mobilia.webp")]'}
           />
           <CardOferta
             categoria={"Alimentos e Pratos Deliciosos"}
             descricao={"A Melhor Qualidade e Sabor!"}
-            image={'bg-[url("/img/food.jpg")]'}
+            image={'bg-[url("/img/food.webp")]'}
           />{" "}
           <CardOferta
             categoria={"Aparelhos Domésticos"}
             descricao={"Aparelhos para Lhe Poupar Tempo!"}
-            image={'bg-[url("/img/domesticos.jpg")]'}
+            image={'bg-[url("/img/domesticos.webp")]'}
           />
           <CardOferta
             categoria={" Moda e Cosméticos"}
             descricao={"Mude de Visual com nossos Produtos!"}
-            image={'bg-[url("/img/woman.jpg")]'}
+            image={'bg-[url("/img/woman.webp")]'}
           />
         </div>
       </section>
@@ -270,10 +270,10 @@ export default function Main() {
           </div>
           <div className="py-8 paisagem-tablet:px-3 px-0">
             <div className="grid retrato-tablet:grid-cols-4 grid-cols-1 gap-1">
-              <div className="p-5  h-80 shadow-lg cardDown bg-[url('/img/cos1.jpg')]  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos2.jpg')]  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardDown  bg-[url('/img/cos3.jpg')]  ring-2 ring-slate-200  card__image"></div>
-              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos4.jpg')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardDown bg-[url('/img/cos1.webp')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos2.webp')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardDown  bg-[url('/img/cos3.webp')]  ring-2 ring-slate-200  card__image"></div>
+              <div className="p-5  h-80 shadow-lg cardUp  bg-[url('/img/cos4.webp')]  ring-2 ring-slate-200  card__image"></div>
             </div>
           </div>
         </div>
@@ -287,21 +287,21 @@ export default function Main() {
           <hr className="m-auto w-14  rounded h-2 bg-red-600 border-0 mt-5" />
         </header>
         <div className="grid grid-cols-1 retrato-tablet:grid-cols-3 paisagem-tablet:grid-cols-4 items-center">
-          <CardTalho image={"bg-[url('/img/carne1.jpg')]"} hours={2} />
-          <CardTalho image={"bg-[url('/img/carne2.jpg')]"} hours={4} />
-          <CardTalho image={"bg-[url('/img/carne3.jpg')]"} hours={1} />
-          <CardTalho image={"bg-[url('/img/carne4.jpg')]"} hours={5} />
-          <CardTalho image={"bg-[url('/img/carne5.jpg')]"} hours={3} />
-          <CardTalho image={"bg-[url('/img/carne6.jpg')]"} hours={7} />
+          <CardTalho image={"bg-[url('/img/carne1.webp')]"} hours={2} />
+          <CardTalho image={"bg-[url('/img/carne2.webp')]"} hours={4} />
+          <CardTalho image={"bg-[url('/img/carne3.webp')]"} hours={1} />
+          <CardTalho image={"bg-[url('/img/carne4.webp')]"} hours={5} />
+          <CardTalho image={"bg-[url('/img/carne5.webp')]"} hours={3} />
+          <CardTalho image={"bg-[url('/img/carne6.webp')]"} hours={7} />
           <CardTalho
             image={
-              "bg-[url('/img/carne7.jpg')] retrato-tablet:hidden paisagem-tablet:inline-block"
+              "bg-[url('/img/carne7.webp')] retrato-tablet:hidden paisagem-tablet:inline-block"
             }
             hours={6}
           />
           <CardTalho
             image={
-              "bg-[url('/img/carne8.jpg')] retrato-tablet:hidden paisagem-tablet:inline-block"
+              "bg-[url('/img/carne8.webp')] retrato-tablet:hidden paisagem-tablet:inline-block"
             }
             hours={9}
           />

@@ -1,7 +1,14 @@
 import FormDialog from "./FormDialog";
 import Formsearch from "./Formsearch";
+import OffCanvas from "./OffCanvas";
 
 export default function Footer() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <footer className="bg-black rounded-t-2xl p-5 relative">
       <div className="grid grid-cols-1 gap-8 retrato-tablet:grid-cols-2 max-w-5xl w-full m-auto">
@@ -80,7 +87,7 @@ export default function Footer() {
               <ul className="flex flex-col space-y-1">
                 <li>
                   <a
-                    href="#"
+                    href="#ofertas"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Ofertas
@@ -88,7 +95,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#bebes"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Bebés
@@ -96,7 +103,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#saude"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Saúde e Beleza
@@ -109,7 +116,7 @@ export default function Footer() {
               <ul className="flex flex-col space-y-1">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.shoprite.co.ao/pt/localizador-de-loja.html"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Lojas
@@ -117,7 +124,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#talho"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Talho
@@ -125,7 +132,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#quiosque"
                     className="text-zinc-600 text-[15px] transition-all hover:text-white hover:underline"
                   >
                     Serviços
@@ -138,6 +145,7 @@ export default function Footer() {
       </div>
 
       <button
+        onClick={scrollToTop}
         title="Voltar ao Topo"
         className="buttonToTop transition-all hover:ring-4 ring-0 ring-slate-300 ring-opacity-30 hover:bg-white hover:text-black absolute right-4 top-4 text-white w-8 h-8 bg-zinc-950 flex items-center justify-center rounded-full"
       >
@@ -160,6 +168,7 @@ export default function Footer() {
 
       <Formsearch />
       <FormDialog />
+      <OffCanvas />
     </footer>
   );
 }
