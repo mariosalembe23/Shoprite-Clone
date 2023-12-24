@@ -1,14 +1,15 @@
 export default function OffCanvas() {
-  
-
   function closeOffCanvas() {
     const offcanvas = document.querySelector(".offcanvas");
     const backOffCanvas = document.querySelector(".backOffCanvas");
-    backOffCanvas.classList.remove("hidden");
+
     backOffCanvas.classList.remove("backMask_on");
     backOffCanvas.classList.add("backMask_off");
     offcanvas.classList.remove("offcanvas_show");
     offcanvas.classList.add("offcanvas_hide");
+    setTimeout(() => {
+      backOffCanvas.classList.remove("hidden");
+    }, 600);
     document.body.style.overflow = "auto";
   }
 
@@ -57,7 +58,7 @@ export default function OffCanvas() {
             <ul className="flex flex-col space-y-6">
               <li>
                 <a
-                onClick={closeOffCanvas}
+                  onClick={closeOffCanvas}
                   href="#ofertas"
                   className="flex item_offcanvas text-zinc-700 transition-all hover:text-black items-center justify-between"
                 >
@@ -80,7 +81,7 @@ export default function OffCanvas() {
               </li>
               <li>
                 <a
-                onClick={closeOffCanvas}
+                  onClick={closeOffCanvas}
                   href="#bebes"
                   className="flex item_offcanvas text-zinc-700 transition-all hover:text-black items-center justify-between"
                 >
@@ -103,7 +104,7 @@ export default function OffCanvas() {
               </li>
               <li>
                 <a
-                onClick={closeOffCanvas}
+                  onClick={closeOffCanvas}
                   href="#saude"
                   className="flex item_offcanvas text-zinc-700 transition-all hover:text-black items-center justify-between"
                 >
@@ -149,7 +150,7 @@ export default function OffCanvas() {
               </li>
               <li>
                 <a
-                onClick={closeOffCanvas}
+                  onClick={closeOffCanvas}
                   href="#quiosque"
                   className="flex item_offcanvas text-zinc-700 transition-all hover:text-black items-center justify-between"
                 >
@@ -172,7 +173,7 @@ export default function OffCanvas() {
               </li>
               <li>
                 <a
-                onClick={closeOffCanvas}
+                  onClick={closeOffCanvas}
                   href="https://www.shoprite.co.ao/pt/receitas.html"
                   target="_blank"
                   className="flex item_offcanvas text-zinc-700 transition-all hover:text-black items-center justify-between"
