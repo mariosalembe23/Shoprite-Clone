@@ -175,7 +175,7 @@ export default function Main() {
               <h3 className="text-3xl font-semibold retrato-tablet:text-start text-center text-black">
                 Cuide de seu Corpo, Pele e Cabelo!
               </h3>
-              <p className="mt-4 retrato-tablet:text-start tetx-center text-slate-800">
+              <p className="mt-4 retrato-tablet:text-start text-center text-slate-800">
                 Desperte a beleza natural que existe em você com nossa exclusiva
                 gama de produtos e dicas dedicadas a aprimorar a saúde da sua
                 pele e cabelo! Na busca pela radiância e confiança, oferecemos
