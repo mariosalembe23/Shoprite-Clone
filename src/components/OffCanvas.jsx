@@ -2,8 +2,21 @@ export default function OffCanvas() {
   const itemOffCanvas = document.querySelectorAll(".item_offcanvas");
 
   itemOffCanvas.forEach((item) => {
-    item.addEventListener("click", closeOffCanvas);
+    item.addEventListener("click", closeOffCanvasLink);
   });
+
+  function closeOffCanvasLink(){
+    const offcanvas = document.querySelector(".offcanvas");
+    const backOffCanvas = document.querySelector(".backOffCanvas");
+    backOffCanvas.classList.remove("hidden");
+    backOffCanvas.classList.remove("backMask_on");
+    backOffCanvas.classList.add("backMask_off");
+    offcanvas.classList.remove("offcanvas_show");
+    offcanvas.classList.add("offcanvas_hide");
+    document.body.style.overflow = "auto";
+  }
+
+  
   function closeOffCanvas() {
     const offcanvas = document.querySelector(".offcanvas");
     const backOffCanvas = document.querySelector(".backOffCanvas");
