@@ -2,11 +2,14 @@ export default function LinksSearch({ keyName, nameLink, url }) {
   function closeCardSearch() {
     const backMask = document.querySelector(".backMask");
     const cardSearch = document.querySelector(".cardSearch");
-    backMask.classList.remove("hidden");
+    
     backMask.classList.remove("backMask_on");
     backMask.classList.add("backMask_off");
     cardSearch.classList.remove("cardSearch_visible");
     cardSearch.classList.add("cardSearch_unvisible");
+    setTimeout(() => {
+      backMask.classList.add("hidden");
+    }, 600);
     document.body.style.overflow = "auto";
   }
   return (

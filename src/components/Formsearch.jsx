@@ -200,18 +200,5 @@ export default function Formsearch() {
     </aside>
   );
 }
-{
-  /*  */
-}
 
-{
-  /* {noResults ? (
-                <p>Sem Resultados Encontrados!</p>
-              ) : (
-                <ul>
-                  {data.map((link, index) => (
-                    <li key={index}>{link.nameLink}</li>
-                  ))}
-                </ul>
-              )} */
-}
+
