@@ -23,4 +23,4 @@ Este Projecto Front-end é um clone do Site da Shoprite mas do jeito que eu Acho
 #Links Adicionais
 [Vercel Profile](https://vercel.com/mariosalembe23)
 [Instagram Profile](https://www.instagram.com/mariosalembe22)
-[URL Live](https://vercel.com/mariosalembe23)
+[URL Live](https://shoprite-clone.vercel.app/)
