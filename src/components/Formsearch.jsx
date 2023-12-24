@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useState } from "react";
 import LinksSearch from "./LinkSearch";
 
@@ -80,15 +80,18 @@ export default function Formsearch() {
     backMask.classList.add("backMask_off");
     cardSearch.classList.remove("cardSearch_visible");
     cardSearch.classList.add("cardSearch_unvisible");
+    setTimeout(() => {
+      cardSearch.classList.add("hidden");
+    }, 600);
     document.body.style.overflow = "auto";
     setinputEmpty("");
     searchInput.value = "";
   }
   return (
     <aside className="backMask w-full hidden h-screen fixed top-0 p-4 left-0 right-0 z-20">
-      <div className="cardSearch max-w-5xl h-96 flex flex-col shadow-xl w-full bg-white rounded mx-auto mt-20">
+      <div className="cardSearch hidden max-w-5xl h-96  flex-col shadow-xl w-full bg-white rounded mx-auto mt-20">
         <header className="px-5  border-b">
-          <form className="w-full">
+          <form className="w-full" onSubmit={(e) => e.preventDefault()}>
             <div className="formInput w-full space-x-2 flex items-center">
               <div>
                 <svg

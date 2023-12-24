@@ -1,4 +1,16 @@
 export default function Navbar() {
+  function showFormContact() {
+    const formContact = document.querySelector(".form_contact");
+    const backMaskForm = document.querySelector(".backMaskForm");
+    backMaskForm.classList.remove("hidden");
+    backMaskForm.classList.remove("backMask_off");
+    backMaskForm.classList.add("backMask_on");
+    formContact.classList.remove("hidden")
+    formContact.classList.remove("form_contact_hide")
+    formContact.classList.add("form_contact_show")
+    document.body.style.overflow = "hidden";
+  }
+
   function openSearchBox() {
     const searchInput = document.getElementById("search");
     const backMask = document.querySelector(".backMask");
@@ -6,7 +18,9 @@ export default function Navbar() {
     backMask.classList.remove("hidden");
     backMask.classList.remove("backMask_off");
     backMask.classList.add("backMask_on");
+    cardSearch.classList.remove("hidden");
     cardSearch.classList.remove("cardSearch_unvisible");
+    cardSearch.classList.add("flex");
     cardSearch.classList.add("cardSearch_visible");
     document.body.style.overflow = "hidden";
     searchInput.focus();
@@ -49,6 +63,7 @@ export default function Navbar() {
           </li>
           <li className="retrato-tablet:inline-block hidden">
             <button
+              onClick={showFormContact}
               title="Contacto"
               className="text-white transition-all hover:text-opacity-60 flex items-center justify-center"
             >

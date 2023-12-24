@@ -29,6 +29,10 @@ body {
 p {
   font-family: "Inter", sans-serif;
 }
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+}
 .card {
   background-size: cover;
   background-position: center center;
@@ -68,7 +72,8 @@ p {
 .icon_boot {
   font-size: 1.2rem;
 }
-.backMask {
+.backMask,
+.backMaskForm {
   background-color: transparent;
 }
 .text_wating,
@@ -81,16 +86,42 @@ p {
   transform: translateY(-200%);
 }
 .cardSearch_visible {
-  animation: cardSearchAnimation 1s 0.5s ease-in-out forwards;
+  animation: cardSearchAnimation .7s 0.5s ease-in-out forwards;
 }
 .cardSearch_unvisible {
-  animation: cardSearchAnimationOff  .5s ease-in-out forwards;
+  animation: cardSearchAnimationOff 0.5s ease-in-out forwards;
 }
 .backMask_on {
   animation: backMaskAnimation 0.15s 0.16s ease-in-out forwards;
 }
 .backMask_off {
-  animation: backMaskAnimationOff .5s 0.16s ease-in-out forwards;
+  animation: backMaskAnimationOff 0.5s 0.16s ease-in-out forwards;
+}
+.form_contact {
+  transform: scale(0);
+  transition: transform 0.8s ease-in-out;
+}
+.form_contact_show {
+  animation: showFormContact 0.3s 0.5s ease-in-out forwards;
+}
+.form_contact_hide {
+  animation: showFormContactClosed 0.5s ease-in-out forwards;
+}
+@keyframes showFormContact {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes showFormContactClosed {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 @keyframes backMaskAnimation {
   0% {
@@ -104,9 +135,10 @@ p {
   }
 }
 @keyframes backMaskAnimationOff {
-  from{
+  from {
     display: inline-block;
-  }to{
+  }
+  to {
     display: none;
   }
 }

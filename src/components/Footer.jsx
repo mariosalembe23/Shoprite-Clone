@@ -1,7 +1,7 @@
+import FormDialog from "./FormDialog";
 import Formsearch from "./Formsearch";
 
 export default function Footer() {
-   
   return (
     <footer className="bg-black rounded-t-2xl p-5 relative">
       <div className="grid grid-cols-1 gap-8 retrato-tablet:grid-cols-2 max-w-5xl w-full m-auto">
@@ -138,7 +138,6 @@ export default function Footer() {
       </div>
 
       <button
-      
         title="Voltar ao Topo"
         className="buttonToTop transition-all hover:ring-4 ring-0 ring-slate-300 ring-opacity-30 hover:bg-white hover:text-black absolute right-4 top-4 text-white w-8 h-8 bg-zinc-950 flex items-center justify-center rounded-full"
       >
@@ -160,6 +159,7 @@ export default function Footer() {
       </button>
 
       <Formsearch />
+      <FormDialog />
     </footer>
   );
 }
