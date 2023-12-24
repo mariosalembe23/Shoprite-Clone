@@ -8,6 +8,10 @@ export default function FormDialog() {
     backMaskForm.classList.remove("hidden");
     backMaskForm.classList.remove("backMask_on");
     backMaskForm.classList.add("backMask_off");
+    setTimeout(() => {
+      formContact.classList.add("hidden");
+      backMaskForm.classList.add("hidden");
+    }, 600);
     document.body.style.overflow = "auto";
   }
   return (

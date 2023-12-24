@@ -8,7 +8,7 @@ export default function OffCanvas() {
     offcanvas.classList.remove("offcanvas_show");
     offcanvas.classList.add("offcanvas_hide");
     setTimeout(() => {
-      backOffCanvas.classList.remove("hidden");
+      backOffCanvas.classList.add("hidden");
     }, 600);
     document.body.style.overflow = "auto";
   }

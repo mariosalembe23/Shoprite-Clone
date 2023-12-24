@@ -82,6 +82,7 @@ export default function Formsearch() {
     cardSearch.classList.add("cardSearch_unvisible");
     setTimeout(() => {
       cardSearch.classList.add("hidden");
+      backMask.classList.add("hidden");
     }, 600);
     document.body.style.overflow = "auto";
     setinputEmpty("");
