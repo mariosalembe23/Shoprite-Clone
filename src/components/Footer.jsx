@@ -1,3 +1,5 @@
+import Formsearch from "./Formsearch";
+
 export default function Footer() {
    
   return (
@@ -156,6 +158,8 @@ export default function Footer() {
           />
         </svg>
       </button>
+
+      <Formsearch />
     </footer>
   );
 }

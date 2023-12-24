@@ -91,7 +91,7 @@ export default function Main() {
         </div>
       </section>
 
-      <section className="p-5" id="bebe">
+      <section className="p-5" id="bebes">
         <header className="text-center">
           <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             Cuide da Saúde de seu Bebê!
@@ -168,7 +168,7 @@ export default function Main() {
         </article>
       </section>
 
-      <section className="p-5 mt-12 care" ref={cardPele}>
+      <section className="p-5 mt-12 care" id="saude" ref={cardPele}>
         <div className="grid items-center gap-5 grid-cols-1 retrato-tablet:grid-cols-2 max-w-6xl w-full m-auto">
           <div className="p-3">
             <header>
@@ -279,7 +279,7 @@ export default function Main() {
         </div>
       </section>
 
-      <section className="mt-28">
+      <section className="mt-28" id="talho">
         <header className="text-center mb-8">
           <h2 className="paisagem-tablet:text-5xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             Das Melhores Carnes
@@ -319,7 +319,7 @@ export default function Main() {
         </div>
       </section>
 
-      <section className="mt-20 p-5">
+      <section className="mt-20 p-5" id="quiosque">
         <header className="text-center">
           <h2 className="paisagem-tablet:text-4xl retrato-tablet:text-4xl text-3xl text-black font-semibold">
             Serviços de Quiosque

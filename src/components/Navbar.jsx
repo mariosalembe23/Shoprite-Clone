@@ -1,4 +1,16 @@
 export default function Navbar() {
+  function openSearchBox() {
+    const searchInput = document.getElementById("search");
+    const backMask = document.querySelector(".backMask");
+    const cardSearch = document.querySelector(".cardSearch");
+    backMask.classList.remove("hidden");
+    backMask.classList.remove("backMask_off");
+    backMask.classList.add("backMask_on");
+    cardSearch.classList.remove("cardSearch_unvisible");
+    cardSearch.classList.add("cardSearch_visible");
+    document.body.style.overflow = "hidden";
+    searchInput.focus();
+  }
   return (
     <div className="w-full p-4 flex justify-between items-center">
       <div>
@@ -15,6 +27,7 @@ export default function Navbar() {
         <ul className="flex items-center space-x-6">
           <li>
             <button
+              onClick={openSearchBox}
               title="Pesquisar"
               className="text-white transition-all hover:text-opacity-60 flex items-center justify-center"
             >
