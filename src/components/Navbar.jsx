@@ -62,7 +62,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="w-full navbar fixed top-0 left-0 right-0 px-4 py-3 z-10 transition-all flex justify-between items-center">
+    <div className="w-full navbar fixed top-0 left-0 right-0 px-6 py-3 z-10 transition-all flex justify-between items-center">
       <div>
         <a href="index.html">
           <img
